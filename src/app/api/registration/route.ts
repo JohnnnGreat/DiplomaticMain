@@ -5,7 +5,7 @@ import nodemailer from "nodemailer";
 import { formSchema } from "./schema";
 import connectDB from "@/lib/mongodb";
 
-export async function POST(request: Request, res: Response) {
+export default async function POST(request: Request, res: Response) {
    await connectDB();
    try {
       // Get the request body
