@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "./Hero";
 import MissionVisionValues from "./Mission";
 import CoursesPreview from "./CoursesPreview";
+import SpecialServices from "./SpecialServices";
 
 const HomePage = () => {
    return (
@@ -10,6 +11,7 @@ const HomePage = () => {
          <Hero />
          <MissionVisionValues />
          <CoursesPreview />
+         <SpecialServices />
       </>
    );
 };
