@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -9,6 +9,8 @@ import { Form, FormField, FormItem, FormLabel, FormControl, FormMessage } from "
 import { Textarea } from "../ui/textarea";
 import PagesHeader from "../shared/PageHeader";
 import axios from "axios";
+import { message } from "antd";
+import { Loader2 } from "lucide-react";
 
 // Define the validation schema using Zod
 const contactSchema = z.object({
@@ -23,14 +25,25 @@ type ContactFormInputs = z.infer<typeof contactSchema>;
 const ContactUs: React.FC = () => {
    const form = useForm<ContactFormInputs>({
       resolver: zodResolver(contactSchema),
+      defaultValues: {
+         name: "",
+         message: "",
+         email: "",
+      },
    });
 
+   const [isLoading, setIsLoading] = useState(false);
    const onSubmit = async (data: any) => {
+      setIsLoading(true);
       try {
          const response = await axios.post("/api/contact", data);
          console.log(response);
+         message.success("Message Sent successfully!!!");
+         form.reset();
       } catch (error) {
          console.log(error);
+      } finally {
+         setIsLoading(false);
       }
    };
 
@@ -42,7 +55,7 @@ const ContactUs: React.FC = () => {
                <div className="w-full max-w-md p-6 rounded-lg">
                   <Form {...form}>
                      <form
-                        className="space-y-6 "
+                        className="space-y-4 "
                         onSubmit={form.handleSubmit(onSubmit)}
                      >
                         <FormField
@@ -108,9 +121,10 @@ const ContactUs: React.FC = () => {
                         />
                         <Button
                            type="submit"
-                           className="w-full mt-4"
+                           className="w-full mt-4 py-6"
+                           disabled={isLoading}
                         >
-                           Send Message
+                           {isLoading ? <Loader2 className="animate-spin" /> : "Send Message"}
                         </Button>
                      </form>
                   </Form>
