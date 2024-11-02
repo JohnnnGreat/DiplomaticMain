@@ -8,6 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Form, FormField, FormItem, FormLabel, FormControl, FormMessage } from "@/components/ui/form";
 import { Textarea } from "../ui/textarea";
 import PagesHeader from "../shared/PageHeader";
+import axios from "axios";
 
 // Define the validation schema using Zod
 const contactSchema = z.object({
@@ -24,9 +25,13 @@ const ContactUs: React.FC = () => {
       resolver: zodResolver(contactSchema),
    });
 
-   const onSubmit = (data: any) => {
-      console.log(data);
-      // Here, you can handle form submission (e.g., send to an API)
+   const onSubmit = async (data: any) => {
+      try {
+         const response = await axios.post("/api/contact", data);
+         console.log(response);
+      } catch (error) {
+         console.log(error);
+      }
    };
 
    return (

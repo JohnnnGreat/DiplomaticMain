@@ -53,7 +53,7 @@ const RegistrationForm: React.FC = () => {
    const onSubmit = async (data: FormData) => {
       console.log(data);
       try {
-         const response = await axios.post("/api/registreration", data);
+         const response = await axios.post("/api/registration", data);
          console.log(response);
          message.success("Registration successfully");
          form.reset();

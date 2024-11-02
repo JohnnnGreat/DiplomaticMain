@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Hero = () => {
    return (
-      <section className="relative bg-white overflow-hidden p-[4rem] lg:min-h-screen lg:p-3 flex justify-center items-center text-center">
+      <section className="relative bg-white overflow-hidden p-[2rem] lg:min-h-screen lg:p-3 flex justify-center items-center text-center">
          {/* Decorative shapes */}
 
          <div className="hidden md:block absolute top-10 left-10 w-16 h-16 border-8 border-brandColor rounded-full animate-slow-spin"></div>
