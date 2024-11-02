@@ -49,6 +49,24 @@ const ContactUs: React.FC = () => {
 
    return (
       <>
+         <title>Contact Us - Diplomats Digital World</title>
+         <meta
+            name="description"
+            content="Get in touch with Diplomats Digital World for inquiries about courses, services, or training opportunities. We are here to assist you!"
+         />
+         <meta
+            name="keywords"
+            content="contact, inquiries, customer service, digital training, support"
+         />
+         <meta
+            name="author"
+            content="Diplomats Digital World"
+         />
+         <link
+            rel="canonical"
+            href="https://www.diplomatsdigitalworld.org/contact"
+         />
+
          <PagesHeader>Contact Us</PagesHeader>
          <div className="container mx-auto my-10 px-4">
             <div className="flex justify-center">

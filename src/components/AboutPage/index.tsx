@@ -7,6 +7,23 @@ const AboutPage = () => {
 
    return (
       <React.Fragment>
+         <meta
+            name="title"
+            content="About Diplomats Digital World - Exceptional Digital Training"
+         />
+         <meta
+            name="description"
+            content="Discover how Diplomats Digital World excels in providing practical and memorable digital training for kids, students, and adults."
+         />
+         <meta
+            name="keywords"
+            content="About Us, Digital Training Center, Professional Courses, Excellence in Education"
+         />
+         <meta
+            name="robots"
+            content="index, follow"
+         />
+
          <div className="max-w-[1000px] px-4 mx-auto mt-8">
             <p className="text-[#7A7A7A] text-justify text-base text-[1rem]">
                The Diplomats Digital World is made up of specialized and seasoned experts. We are one of the best coding

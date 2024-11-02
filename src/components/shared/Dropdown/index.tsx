@@ -128,7 +128,7 @@ export default function Navbar() {
                               {menu.links.map((link) => (
                                  <Link
                                     key={link.slug}
-                                    href={link.slug}
+                                    href={`/courses${link.slug}`}
                                     className="block px-3 py-2 text-gray-700"
                                  >
                                     {link.title}
