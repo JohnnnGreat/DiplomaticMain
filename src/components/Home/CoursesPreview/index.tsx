@@ -1,9 +1,10 @@
 import React from "react";
 import { coursesPreview } from "./constant";
+import Link from "next/link";
 
 const CoursesPreview = () => {
    return (
-      <div className="min-h-screen overflow-hidden bg-[#000000c2] flex flex-col items-center justify-center p-4 md:p-8">
+      <div className="min-h-screen overflow-hidden bg-[#000000da] flex flex-col items-center justify-center p-4 md:p-8">
          <div className="max-w-screen-lg w-full">
             {" "}
             {/* Adjust max-width and width */}
@@ -18,7 +19,7 @@ const CoursesPreview = () => {
                {coursesPreview.map((course: string, index: number) => (
                   <div
                      key={index}
-                     className="inline-block px-4 py-2 md:px-6 md:py-3 border border-[#ffffff60] text-white text-base md:text-lg rounded-lg hover:bg-[#00000050] transition-transform transform hover:scale-105 whitespace-nowrap"
+                     className="inline-block px-4 py-2 md:px-6 md:py-3 border border-[#ffffff34] text-white text-base md:text-lg rounded-lg hover:bg-[#00000050] transition-transform transform  whitespace-nowrap"
                   >
                      {course}
                   </div>
@@ -26,9 +27,12 @@ const CoursesPreview = () => {
             </div>
             <div className="flex justify-center">
                {/* View All Button */}
-               <button className="px-6 py-3 md:px-8 md:py-4 bg-brandColor text-white text-base md:text-lg rounded-lg hover:bg-brandColor-dark transition-transform transform hover:scale-105">
+               <Link
+                  href="/courses"
+                  className="px-6 py-3 md:px-8 md:py-4 bg-brandColor text-white text-base md:text-lg rounded-lg hover:bg-brandColor-dark transition-transform transform hover:scale-105"
+               >
                   View all Courses
-               </button>
+               </Link>
             </div>
          </div>
       </div>

@@ -15,7 +15,7 @@ const Header: React.FC = () => {
    };
 
    return (
-      <header className="bg-[#FCFCFC] h-[117px] relative z-50">
+      <header className="bg-[#FCFCFC] h-[90px] py-3 relative z-50">
          <div className="max-w-[1000px] h-full mx-auto flex justify-between items-center px-4 md:px-0">
             {/* Logo */}
             <div className="text-xl font-bold text-brandColor leading-none">
