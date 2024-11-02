@@ -73,7 +73,7 @@ const LoginPage = () => {
                                  {...field}
                                  type="email"
                                  placeholder="name@example.com"
-                                 className="bg-white/10 border-white/20   "
+                                 className="bg-white/10    "
                               />
                            </FormControl>
                            <FormMessage className="text-red-300" />
