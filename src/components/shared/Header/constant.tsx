@@ -16,5 +16,5 @@ export const headerNavigations = [
    // { title: "Registration", path: "/registration" },
    { title: "About Us", path: "/about" },
 
-   { title: "Contact Us", path: "/contact" },
+   // { title: "Contact Us", path: "/contact" },
 ];

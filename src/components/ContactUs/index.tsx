@@ -24,7 +24,7 @@ const ContactUs: React.FC = () => {
       resolver: zodResolver(contactSchema),
    });
 
-   const onSubmit = (data) => {
+   const onSubmit = (data: any) => {
       console.log(data);
       // Here, you can handle form submission (e.g., send to an API)
    };
@@ -34,7 +34,7 @@ const ContactUs: React.FC = () => {
          <PagesHeader>Contact Us</PagesHeader>
          <div className="container mx-auto my-10 px-4">
             <div className="flex justify-center">
-               <div className="w-full max-w-md p-6 border rounded-lg">
+               <div className="w-full max-w-md p-6 rounded-lg">
                   <Form {...form}>
                      <form
                         className="space-y-6 "
@@ -50,6 +50,7 @@ const ContactUs: React.FC = () => {
                                        id="name"
                                        {...field}
                                        placeholder="Your Name"
+                                       className="bg-white/10 "
 
                                        // className={`${errors.name ? "border-red-500" : "border-gray-300"}`}
                                     />
