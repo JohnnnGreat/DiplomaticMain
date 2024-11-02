@@ -111,3 +111,16 @@
       @apply bg-background text-foreground;
    }
 }
+
+@keyframes slowZoom {
+   0% {
+      transform: scale(1);
+   }
+   100% {
+      transform: scale(1.1); /* Slight zoom effect */
+   }
+}
+
+.animate-slow-zoom {
+   animation: slowZoom 5s ease-in-out infinite; /* Slow zoom with a 20-second duration */
+}
