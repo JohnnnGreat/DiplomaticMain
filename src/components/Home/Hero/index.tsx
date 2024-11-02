@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Hero = () => {
    return (
-      <section className="relative bg-white overflow-hidden min-h-screen p-3 flex justify-center items-center text-center">
+      <section className="relative bg-white overflow-hidden p-[4rem] lg:min-h-screen lg:p-3 flex justify-center items-center text-center">
          {/* Decorative shapes */}
 
          <div className="hidden md:block absolute top-10 left-10 w-16 h-16 border-8 border-brandColor rounded-full animate-slow-spin"></div>
@@ -83,7 +83,7 @@ const Hero = () => {
          <div className="z-10">
             <h1 className="text-4xl md:text-5xl font-bold text-black">
                Welcome to The Diplomats <br />
-               <span className="text-brandColor">Digital</span> World
+               <span className="gradient-text">Digital</span> World
             </h1>
             <p className="text-gray-500 text-lg mt-4">...leading the digital revolution!</p>
 

@@ -5,7 +5,7 @@ import { courses, quickLinks } from "./constants";
 
 const Footer: React.FC = () => {
    return (
-      <footer className="bg-[#000000da] text-white py-10">
+      <footer className="bg-[#000000da] text-white py-[3rem]">
          <div className="container mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Logo & About */}
             <div className="mb-4">

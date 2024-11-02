@@ -82,7 +82,7 @@ export default function Navbar() {
                   Immigration Questions + AI
                </Link> */}
                <Link
-                  href="/contact-us"
+                  href="/contact"
                   className="text-gray-700 hover:text-gray-900"
                >
                   Contact Us

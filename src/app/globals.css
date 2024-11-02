@@ -124,3 +124,14 @@
 .animate-slow-zoom {
    animation: slowZoom 5s ease-in-out infinite; /* Slow zoom with a 20-second duration */
 }
+
+.gradient-text {
+   background: linear-gradient(to right, red, #ff8844);
+   -webkit-background-clip: text;
+   background-clip: text;
+   color: transparent;
+}
+
+.bg-gradient {
+   background: linear-gradient(to right, red, #ff8844);
+}

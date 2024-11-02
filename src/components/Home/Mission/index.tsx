@@ -9,7 +9,9 @@ const MissionVisionValues = () => {
                <div className="flex gap-x-4 items-center mb-6">
                   <div className="w-[15px] bg-brandColor rounded-[10px] h-[70px]"></div>
                   {/* Title */}
-                  <h2 className="text-3xl font-bold text-gray-800 max-w-[300px]">Our Mission, Our Vision, and Our Core Value</h2>
+                  <h2 className="text-3xl font-bold text-gray-800 max-w-[300px]">
+                     Our Mission, Our Vision, and Our Core Value
+                  </h2>
                </div>
 
                {/* Core Values */}
@@ -43,7 +45,7 @@ const MissionVisionValues = () => {
             {/* Right Section: Mission and Vision */}
             <div className="w-full md:w-1/2 mt-8 md:mt-0">
                {/* Mission */}
-               <div className="bg-brandColor text-white p-6 rounded-md mb-4">
+               <div className="bg-gradient text-white p-6 rounded-md mb-4">
                   <h3 className="text-lg font-semibold">Mission</h3>
                   <p className="mt-2">Exceptional Customer Service</p>
                </div>
