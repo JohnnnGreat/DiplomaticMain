@@ -81,7 +81,7 @@ const Hero = () => {
 
          {/* Hero Content */}
          <div className="z-10">
-            <h1 className="text-4xl md:text-5xl font-bold text-black">
+            <h1 className="text-5xl md:text-5xl font-bold text-black">
                Welcome to The Diplomats <br />
                <span className="gradient-text">Digital</span> World
             </h1>

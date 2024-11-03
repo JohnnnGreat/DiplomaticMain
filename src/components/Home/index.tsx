@@ -4,6 +4,7 @@ import MissionVisionValues from "./Mission";
 import CoursesPreview from "./CoursesPreview";
 import SpecialServices from "./SpecialServices";
 import Display from "./Display";
+import Testimonials from "./Testimonials";
 
 const HomePage = () => {
    return (
@@ -68,6 +69,7 @@ const HomePage = () => {
          <CoursesPreview />
          <Display />
          <SpecialServices />
+         <Testimonials />
       </>
    );
 };

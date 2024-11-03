@@ -42,7 +42,7 @@ const SpecialServices = () => {
                      className="bg-white rounded-lg border  transition-shadow duration-300 p-6 flex flex-col items-center text-center"
                   >
                      {service.icon}
-                     <h3 className="text-2xl font-semibold text-black mb-2">{service.title}</h3>
+                     <h3 className="text-2xl font-semibold gradient-text mb-2">{service.title}</h3>
                      <p className="text-[#0000009d]">{service.description}</p>
                   </div>
                ))}

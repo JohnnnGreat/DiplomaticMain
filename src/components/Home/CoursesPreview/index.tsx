@@ -29,7 +29,7 @@ const CoursesPreview = () => {
                {/* View All Button */}
                <Link
                   href="/courses"
-                  className="px-6 py-3 md:px-8 md:py-4 bg-brandColor text-white text-base md:text-lg rounded-lg hover:bg-brandColor-dark transition-transform transform hover:scale-105"
+                  className="px-6 py-3 md:px-8 md:py-4 bg-gradient text-white text-base md:text-lg rounded-lg hover:bg-brandColor-dark transition-transform transform hover:scale-105"
                >
                   View all Courses
                </Link>
