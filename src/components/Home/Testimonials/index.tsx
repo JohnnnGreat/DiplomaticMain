@@ -13,13 +13,11 @@ const Testimonials = () => {
                align: "start",
                loop: true,
             }}
-            plugins={
-               [
-                  //  Autoplay({
-                  //     delay: 2000,
-                  //  }),
-               ]
-            }
+            plugins={[
+               Autoplay({
+                  delay: 2000,
+               }),
+            ]}
             className=" rounded-md max-w-[100%] p-8 relative "
          >
             <CarouselContent aria-label="Testimonials">
